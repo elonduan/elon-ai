@@ -45,7 +45,9 @@
 </head>
 <body>
   <div class="card" role="region" aria-label="Fake search card">
-    <div class="label">Elon.ai Ask Anything...</div>
+    <div class="label">Elon.ai 
+      &nbsp;
+      Ask Anything...</div>
     <form id="searchForm">
       <input id="q" type="text" placeholder="Ask anything..." aria-label="Search input" />
       <button type="submit">Search</button>
@@ -54,13 +56,7 @@
 
   <script>
     // The first five elements we'll always show
-    const firstFive = [
-      { number: 1, symbol: 'H',  name: 'Hydrogen' },
-      { number: 2, symbol: 'He', name: 'Helium' },
-      { number: 3, symbol: 'Li', name: 'Lithium' },
-      { number: 4, symbol: 'Be', name: 'Beryllium' },
-      { number: 5, symbol: 'B',  name: 'Boron' }
-    ];
+    
 
     document.getElementById('searchForm').addEventListener('submit', function (e) {
       e.preventDefault(); // don't reload current page
